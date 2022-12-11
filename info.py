@@ -67,7 +67,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Hd10tv1')
 
 # Others
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001672863900))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001672863900'))
 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'sources_cods')
 
@@ -77,9 +77,9 @@ IMDB = is_enabled((environ.get('IMDB', "True")), True)
 
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b><i>{file_name} » {file_size} › [ᎯℕUℛᎯᎶ](https://t.me/MOVIES_ZILAA)</i></b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
 
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b><i>{file_name} » {file_size} › [ᎯℕUℛᎯᎶ](https://t.me/MOVIES_ZILAA)</i></b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10 \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [ᴀᴍ_ᴛᴇᴄʜ](https://t.me/Am_RoBots)")
 
